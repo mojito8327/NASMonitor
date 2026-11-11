@@ -1,0 +1,12 @@
+# NASMonitor 版本号单一来源（Single Source of Truth）
+#
+# 规则：每次功能更新 / 重新打包发布前，必须执行
+#     ./scripts/version.sh bump <新版本>
+# 不要手改 Info.plist、关于页、包名、README 或 Release 链接里的版本数字。
+#
+# 格式：
+#   MARKETING = 对外版本号，主版本.次版本[.修订]，如 1.1 / 1.1.1
+#   BUILD     = 单调递增的整数构建号（CFBundleVersion），发布一次 +1
+# 本文件是 shell 安全的 KEY=VALUE，供 scripts/version.sh 直接 source。
+MARKETING=1.3
+BUILD=4
